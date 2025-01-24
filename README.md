@@ -17,6 +17,16 @@ The server will work with Civilizationbot out of the box.
 
 The server is configured through a `.env` file. The first time the server is run, a `.env` file will be created with default settings.
 
+## Initially Populating verify.json
+
+If you wish to have a database of verified ckey/discord pairs for the bot to verify against, Valithor's database can be pulled from his site with the following curl command:
+
+`curl -sq -A "Civ13" "http://valzargaming.com:8080/verified/"`
+
+This will grant you the full contents of his verification list, and since he hates privacy (see below), he won't be removing anything from his list, and it will presumably remain available.
+
+![image](https://github.com/user-attachments/assets/b0c417da-6330-4552-a319-262e6730f40f)
+
 ## License
 
 The server is provided under the AGPL-3.0 license. See LICENSE for more information.
